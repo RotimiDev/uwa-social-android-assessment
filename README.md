@@ -1,6 +1,10 @@
 # uwa-social-android-assessment
 A simple social feed implementation built as part of the UWA Social Android technical assessment.
 
+## App Demo
+
+[▶ Watch Screen Recording](docs/demo/Screen_Recording_20260922_221401.mp4)
+
 ## Tech Stack
 
 - Kotlin
