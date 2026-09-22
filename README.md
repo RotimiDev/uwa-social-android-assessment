@@ -3,7 +3,8 @@ A simple social feed implementation built as part of the UWA Social Android tech
 
 ## App Demo
 
-[▶ Watch Screen Recording](docs/demo/Screen_Recording_20260922_221401.mp4)
+[▶ Watch Screen Recording](https://github.com/user-attachments/assets/0509eb7e-8578-4659-ac43-ae06188444a0
+)
 
 ## Tech Stack
 
