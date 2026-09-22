@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">UwaSocial</string>
+
+    <!-- Feed -->
+    <string name="feed_title">Feed</string>
+    <string name="feed_loading">Loading your feed...</string>
+    <string name="feed_empty_title">No posts yet</string>
+    <string name="feed_empty_description">When people share updates, they will show up here.</string>
+
+    <!-- Offline / Error -->
+    <string name="feed_offline_title">You are offline</string>
+    <string name="feed_offline_description">Connect to the internet to load new posts. Anything cached earlier is still available.</string>
+    <string name="feed_try_again">Try again</string>
+    <string name="feed_error_title">Something went wrong</string>
+    <string name="feed_retry">Retry</string>
+    <string name="feed_error_retry">Retry</string>
+    <string name="feed_load_more_error">Could not load more - tap to retry</string>
+    <string name="feed_default_error">Please check your connection and try again.</string>
+
+    <!-- Post -->
+    <string name="post_profile_photo_description">%1$s profile photo</string>
+    <string name="post_image_description">Post image</string>
+    <string name="post_like">Like</string>
+    <string name="post_unlike">Unlike</string>
+</resources>
