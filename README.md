@@ -61,18 +61,29 @@ The UI handles:
 
 ## Like Interaction
 
-Likes use optimistic UI updates to provide immediate feedback.
-If the server operation fails, the local state is reverted.
+Liking a post needs to feel instant and survive Paging's internal diffing, so FeedViewModel keeps an in-memory map of pending like overrides that's combined with the paged stream (combine(pagedPosts, likeOverrides)) and applied on top of whatever page data comes through. The same toggle is persisted to Room in the background via PostRepository.toggleLike so it survives process death and offline sessions.
 
 ## Testing
 
 Unit tests cover:
-- Successful post retrieval
-- API failure handling
-- Like functionality
+- PostRepositoryTest — verifies the network/cache fallback behaviour
+- FeedViewModelTest — verifies the like-toggle overrides the paged data and calls through to the repository (asSnapshot() from paging-testing is used to materialize PagingData in tests, since PagingData.map is lazy)
 
 ## Technical Decisions
 
 I prioritized a simple, maintainable architecture that can
 scale to additional social features without introducing
 unnecessary complexity.
+
+## Running the appp
+From Android Studio:
+Clone the repo: git clone git@github.com:RotimiDev/uwa-social-android-assessment.git
+
+1. File → Open, select the cloned uwa-social-android-assessment folder
+2. Let Gradle sync (first sync pulls dependencies, may take a minute)
+3. Pick an emulator or a connected physical device from the device dropdown
+4. Click Run (▶) — this installs and launches the app
+
+## Running the unit test
+From the command line:
+./gradlew testDebugUnitTest
