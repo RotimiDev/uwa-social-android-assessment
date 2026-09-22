@@ -6,6 +6,9 @@ A simple social feed implementation built as part of the UWA Social Android tech
 [▶ Watch Screen Recording](https://github.com/user-attachments/assets/0509eb7e-8578-4659-ac43-ae06188444a0
 )
 
+## APK
+Download the APK here: https://drive.google.com/file/d/1zRNoSAU67MrqmDSfu9lNSP4nDgBj8Z5T/view?usp=sharing
+
 ## Tech Stack
 
 - Kotlin
